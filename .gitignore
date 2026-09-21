@@ -1,0 +1,84 @@
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
+
+# Python
+.venv/
+.venv-lora/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Apple Messages databases and snapshots
+chat.db*
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.parquet
+*.arrow
+*.feather
+*.csv
+*.jsonl
+!tests/fixtures/*.jsonl
+messages/
+message-data/
+snapshots/
+
+# Extracted or processed personal data
+data/
+# data/ above is deliberately broad; re-include the public source package it
+# would otherwise hide. Everything inside is upstream MIT code, never data.
+!src/imessage_mlx/data/
+datasets/
+corpus/
+corpora/
+exports/
+private/
+artifacts/
+
+# Upstream pipeline private working directories
+work/
+*.npy
+
+# Models and training outputs
+checkpoints/
+models/
+weights/
+runs/
+outputs/
+logs/
+wandb/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.npz
+*.mlx
+
+# Tokenizer artifacts can encode private corpus content
+tokenizer*.json
+tokenizer*.model
+vocab*.json
+merges*.txt
+
+# agent memory cache (verbatim commands — never commit)
+local/
