@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling==1.32.4"]
+requires = ["hatchling==1.33.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -38,7 +38,7 @@ imessage-mlx = "imessage_mlx.cli:app"
 
 [dependency-groups]
 dev = [
-  "hatchling==1.32.4",
+  "hatchling==1.33.0",
   "pytest>=8,<10",
   "pytest-cov>=6,<8",
   "ruff>=0.12,<1",
